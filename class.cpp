@@ -1,0 +1,28 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+class mars{
+    string p_name;
+    string p_role;
+    string p_subsystem;
+    int p_rollno;
+
+    public:
+      mars(string name,string role,string subsystem,int rollno){
+        p_name = name;
+        p_role = role;
+        p_subsystem = subsystem;
+        p_rollno = rollno;
+      } 
+    
+    void call(){
+        cout << p_name << " is the " << p_role <<" of the " << p_subsystem << " and his/her roll number is " << p_rollno << endl; 
+    }
+};
+
+int main(){
+    mars member1("Manas","Lead","Software",1088);
+    member1.call();
+    return 0;
+}
